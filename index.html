@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/scheme.css">
+    <script src="./js/login.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="login">
+            <form action="./php/cookies.php" method="post">
+                <span class="form-span" id="form-span-1">
+                    <h1 id="h1">Inicio sesión</h1>
+                </span>
+                <span class="form-span" id="form-span-2">
+                    <p id="p-login-circle">
+                        <input type="text" name="usuario" id="input-text-usuario" class="input-text" placeholder="Usuario..." onblur="loginAnimation()">
+                        <span class="display-none" id="login-circle">LB</span>
+                    </p>
+                    <p id="p-login-password"><input type="text" name="clave" id="input-text-password" class="input-text" placeholder="Password..."></p>
+                    
+                </span>
+                <span class="form-span" id="form-span-3">
+                    <input type="submit" name="iniciar" value="Iniciar sesión" class="button-iniciar-sesion">
+                    <a href="./index.html"><input type="button" value="Cambiar usuario" class="button-cambiar-usuario" id="button-cambiar-usuario"></a>
+
+                </span>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>
